@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./Develop/utils/generateMarkdown.js');
+const { resolve } = require('path');
 
 const readmeInfo = []
 
@@ -120,7 +121,20 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    return new Promise ((resolve, reject) => {
+        fs.writeFile('./output/' + fileName, data, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+            resolve({
+                ok: true,
+                message: '====FILE CREATED IN OUTPUT FOLDER===='
+            })
+        })
+    })
+}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -128,4 +142,11 @@ function init() {
 }
 
 // Function call to initialize app
-init().then(markdownData => generateMarkdown(markdownData));
+init().then(markdownData => generateMarkdown(markdownData))
+    .then(fileWrite => writeToFile(fileWrite[0], fileWrite[1]))
+    .then(writeFileResponse => {
+        console.log(writeFileResponse.message)
+    })
+    .catch(err => {
+        console.log(err)
+    });
