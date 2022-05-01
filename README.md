@@ -1,13 +1,13 @@
 # README GENERATOR ![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)
 
   ## Table of Contents
-  [Description](#description)
-  [Installation](#installation)
-  [Usage](#usage)
-  [License](#license)
-  [Contributions](#contributing)
-  [Tests](#tests)
-  [Questions](#questions)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributions](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
   
   ## Description
@@ -31,5 +31,5 @@
   
   ## Questions
   Contact Information:
-  [Github page](https://github.com/edlebeck)
-  alan.edlebeck@gmail.com
+  - [Github page](https://github.com/edlebeck)
+  - alan.edlebeck@gmail.com

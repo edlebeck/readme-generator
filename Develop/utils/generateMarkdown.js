@@ -69,13 +69,13 @@ function generateMarkdown(data) {
   return [data.title + 'README.md', `# ${data.title} ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
-  [Description](#description)
-  [Installation](#installation)
-  [Usage](#usage)
-  ${renderLicenceTOC(data.license)}
-  [Contributions](#contributing)
-  [Tests](#tests)
-  [Questions](#questions)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - ${renderLicenceTOC(data.license)}
+  - [Contributions](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
   
   ## Description
@@ -97,8 +97,8 @@ function generateMarkdown(data) {
   
   ## Questions
   Contact Information:
-  [Github page](https://github.com/${data.userName})
-  ${data.email}
+  - [Github page](https://github.com/${data.userName})
+  - ${data.email}
 `];
 
 }
