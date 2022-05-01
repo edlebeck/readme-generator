@@ -17,7 +17,7 @@
   Make sure NodeJS and the Inquirer package are installed on your computer the clone the code from [README GENERATOR](www.github.com/edlebeck/readme-generator).
   
   ## Usage
-  Type 'node index' into the command line and enter README content through the following prompts.  After entering all the prompts, the program will create a new README file for your project in the output folder.
+  Type 'node index' into the terminal and enter README content through the following prompts.  After entering all the prompts, the program will create a new README for your project in the output folder. [Walkthrough Video](https://drive.google.com/file/d/1Jgj3hkoJ_YGmwZT48VHMUQ5vEC4blTLx/view)
   
   ## License
   [Unlicense](http://unlicense.org/)   
