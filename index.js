@@ -11,7 +11,7 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'Enter a title for your project.',
+        message: 'Enter a title for your project:',
         validate: titleInput => {
             if (titleInput) {
                 return true;
@@ -24,12 +24,12 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Enter a description for your project.',
+        message: 'Enter a description for your project:',
         validate: descriptionInput => {
             if (descriptionInput) {
                 return true;
             } else {
-                console.log('Please enter a description.');
+                console.log('Please enter a description:');
                 return false;
             }
         }
@@ -37,7 +37,7 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'Enter instructions for installing your project.',
+        message: 'Enter instructions for installing your project:',
         validate: installationInput => {
             if (installationInput) {
                 return true;
@@ -50,7 +50,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'Enter instructions for using your project.',
+        message: 'Enter instructions for using your project:',
         validate: usageInput => {
             if (usageInput) {
                 return true;
@@ -63,7 +63,7 @@ const questions = [
     {
         type: 'input',
         name: 'contribution',
-        message: 'Enter instructions for contributing to your project.',
+        message: 'Enter instructions for contributing to your project:',
         validate: contributionInput => {
             if (contributionInput) {
                 return true;
@@ -76,7 +76,7 @@ const questions = [
     {
         type: 'input',
         name: 'tests',
-        message: 'Enter instructions for testing your project.',
+        message: 'Enter instructions for testing your project:',
         validate: testInput => {
             if (testInput) {
                 return true;
@@ -89,13 +89,13 @@ const questions = [
     {
         type: 'list',
         name: 'license',
-        message: 'Choose a license for your project.',
+        message: 'Choose a license for your project:',
         choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense', 'None']
     },
     {
         type: 'input',
         name: 'userName',
-        message: 'Enter your Github user name.',
+        message: 'Enter your Github user name:',
         validate: userInput => {
             if (userInput) {
                 return true;
@@ -108,7 +108,7 @@ const questions = [
     {
         type: 'input',
         name: 'email',
-        message: 'Enter your email address.',
+        message: 'Enter your email address:',
         validate: emailInput => {
             if (emailInput) {
                 return true;
@@ -138,6 +138,7 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
+    console.log('================')
     return inquirer.prompt(questions)
 }
 
