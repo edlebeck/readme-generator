@@ -24,7 +24,7 @@
     
   
   ## Contributing
-  If you wish to contribute to this project, please email alan.edlebeck@gmail.com or reach out at [Github](www.github.com/edlebeck)cl
+  If you wish to contribute to this project, please email alan.edlebeck@gmail.com or reach out at [Github](www.github.com/edlebeck)
   
   ## Tests
   There are no tests for this project.
